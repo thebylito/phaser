@@ -28,6 +28,16 @@ export default class extends Phaser.Scene {
   }
 
   update () {
-    // this.mushroom.update()
+    // console.log('uppdate')
+    const cursors = this.input.keyboard.createCursorKeys()
+    if (cursors.left.isDown) {
+      console.log('Esquerda')
+    } else if (cursors.right.isDown) {
+      console.log('Direita')
+    } else if (cursors.up.isDown) {
+      console.log('Cima')
+    } else if (cursors.down.isDown) {
+      console.log('Baixo')
+    }
   }
 }
